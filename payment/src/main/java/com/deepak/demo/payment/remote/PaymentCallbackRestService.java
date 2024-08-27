@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class PaymentCallbackRestService {
 
-    public static final String callbackURL = "http://localhost:8080/payment/update";
+    public static final String callbackURL = "http://localhost:8083/payment/update";
 
     public Boolean sendStatus(PaymentInfo paymentInfo){
         RestTemplate restTemplate = new RestTemplate();
